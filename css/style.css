@@ -8,7 +8,29 @@
  	color: #666;
  }
 
- .pimg1, .pimg2, .pimg3 {
+.container
+{
+	margin: 0 auto;
+}
+nav
+{
+	float: right;
+}
+
+.menu li
+{
+	padding: 0;
+	display: block;
+	float: left;
+}
+
+.menu li a
+{
+	color: #fff;
+	text-decoration: none;
+}
+ .pimg1, .pimg2, .pimg3 
+ {
  	position:relative;
     opacity: 0.70;
     background-position: center;
@@ -21,27 +43,32 @@
     background-attachment: fixed;
  }
 
- .pimg1 {
+ .pimg1 
+ {
  	background-image: url('../img/image8.jpg');
  	min-height: 100%;
  }
 
-  .pimg2 {
+  .pimg2 
+  {
  	background-image: url('../img/image3.jpg');
  	min-height: 400px;
  }
 
-  .pimg3 {
+  .pimg3 
+  {
  	background-image: url('../img/image5.jpg');
  	min-height: 400px;
  }
 
-.section {
+.section 
+{
 	text-align: center;
 	padding: 50px 80px;
 }
 
-.section-light {
+.section-light 
+{
 	background-color: #f4f4f4;
 	color: #666;
 }
@@ -51,7 +78,8 @@
 	color: #ddd;
 }
 
-.ptext {
+.ptext 
+{
 	position: absolute;
 	top: 50%;
 	width: 100%;
@@ -62,8 +90,10 @@
 	text-transform: uppercase;
 }
 
-.ptext .border {
+.ptext .border 
+{
 	background-color: #111;
 	color: #fff;
 	padding: 20px;
 }
+
