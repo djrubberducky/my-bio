@@ -13,8 +13,21 @@
 	<link rel="stylesheet" href="css/style.css">
 	<script rel="text/javascript" href="main.js"></script>
 <body>
-	
-	<div class="parallax-img1 flex-center">
+
+	<header class="header" id="header">
+		<div class="navigation-logo" id="navigation-logo">
+			<img src="img/duck.svg" height="36">
+		</div>
+		<ul class="navigation-bar" id="navigation-bar">
+			<li><a href="#home">Home</a></li>
+			<li><a href="#">Ulica</a></li>
+			<li><a href="#">Street</a></li>
+			<li><a href="#">Quack</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
+	</header>
+
+	<div class="parallax-img1 flex-center" id="home">
 		<div class="ptext">
 			Hello
 		</div>
@@ -64,14 +77,14 @@
 		</div>
 	</div>
 	<section class="section section-dark section-row">
-		<div class="section-row-item col-desktop-size-60">
+		<div class="section-row-item col-desktop-size-60 col-mobile-size-100">
 			<h2>Wanna talk, Julia?</h2>
 			<p>
 				My best friend in school was Julia. She was crazy(She called herself pigeon) and it attracted me to her the most. She never feared coming to a stranger and just started talking, laughing, and so on. And although I loved to laugh at her, I greatly respected her in my soul and considered her an example to follow. One example I can even bring. I always went to school by bus in which one nice guy always went to work. I admired  him for years and did not dare to come and get acquainted. One day I said to myself "Now or never!" and to this day I walk with him till morning and go to various music festivals. I miss Julia so much. She moved to Odessa and we get in touch not so frequently as we could.
 			</p>
 		</div>
-		<div class="section-row-item col-desktop-size-40">
-			<span class="unicorn mobile-hidden">
+		<div class="section-row-item col-desktop-size-40 mobile-hidden">
+			<span class="unicorn">
 				🦄
 			</span>
 		</div>
@@ -81,7 +94,7 @@
 			It was nice to meet you
 		</div>
 	</div>
-	<footer class="contact">
+	<footer class="contact" id="contact">
 		<div class="container">
 			<div class="row">
 				<h2 class="text-center">Contact me</h2>
@@ -97,7 +110,7 @@
 					</a>
 				</div>
 				<div class="col-sm-8">
-					<form action="mail.php" method="POST">
+					<form action="https://formspree.io/daria.bilous@icloud.com" method="POST">
 
 						<div class="col-sm-12">
 							<div class="form-group">
@@ -106,23 +119,24 @@
 							</div>
 						</div>
 
+						<!-- <input type="hidden" value="Portfolio message" name="_subject"> -->
+
 						<div class="col-sm-6">
 							<div class="form-group">
 								<label for="">Name</label>
-								<input type="text" class="form-control" id="" name="user_name" placeholder="How shall I call you?">
+								<input type="text" class="form-control" name="_subject" placeholder="How shall I call you?">
 							</div>
 						</div>
 					
 						<div class="col-sm-6">
 							<div class="form-group">
 								<label for="">Email</label>
-								<input type="text" class="form-control" id="" name="user_email" placeholder="yourmail@email.com">
+								<input type="text" class="form-control" name="_replyto" placeholder="yourmail@email.com">
 							</div>
 						</div>
 						
 						<div class="col-sm-12 text-center">
 							<button type="submit" class="btn btn-lg btn-pretty send-button">
-								<!-- Send -->
 								<canvas id="send-button"></canvas>
 							</button>
 						</div>

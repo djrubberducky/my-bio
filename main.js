@@ -277,3 +277,18 @@ var sendButton = new LiquidButton({
   title: "Send",
   elementId: "send-button"
 });
+
+
+// var navigationLogo = document.getElementById("navigation-logo");
+var header = document.getElementById("header");
+var navigationBar = document.getElementById("navigation-bar");
+
+
+header.addEventListener("click", function () {
+  var isOpen = navigationBar.getAttribute("data-open");
+  if (isOpen) {
+    navigationBar.removeAttribute("data-open");
+  } else {
+    navigationBar.setAttribute("data-open", "1");
+  }
+});
