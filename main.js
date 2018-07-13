@@ -17,9 +17,12 @@ var LiquidButton = function () {
     this.gap = 5;
     this.debug = false;
     this.forceFactor = 0.2;
-    this.color1 = '#36DFE7';
-    this.color2 = 'pink';
-    this.color3 = 'pink';
+    // this.color1 = '#36DFE7';
+    // this.color2 = 'pink';
+    // this.color3 = 'pink';
+    this.color1 = '#C9FFBF';
+    this.color2 = '#FFAFBD';
+    this.color3 = '#FFAFBD';
     this.textColor = '#FFFFFF';
     this.layers = [{
       points: [],

@@ -1,93 +1,53 @@
- body, html{
+ body, html {
  	height: 100%;
  	margin: 0;
  	font-size: 16px;
  	font-family: 'Abel', sans-serif;
  	font-weight: 400;
  	line-height: 1.8em;
- 	color: #666;
+     color: #666;
+	 
  }
 
-.container
-{
-	margin: 0 auto;
-}
-
-nav
-{
-	float: right;
-}
-
-.menu li
-{
-	padding: 0;
-	display: block;
-	float: left;
-}
-
-.menu li a
-{
-	color: #fff;
-	text-decoration: none
-}
- .parallax-img1, .parallax-img2, .parallax-img3 
- {
- 	position:relative;
-    opacity: 0.70;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    /*
-    fixed = parallax
-    scroll = normal
-    */
-    background-attachment: fixed;
- }
-
-.parallax-img1 
-{
- 	background-image: url('../img/image8.jpg');
- 	min-height: 100%;
-}
-
-.parallax-img2 
-{
- 	background-image: url('../img/image3.jpg');
- 	min-height: 400px;
- }
-
-.parallax-img3 
-{
- 	background-image: url('../img/image5.jpg');
- 	min-height: 400px;
-}
-
-.section 
-{
-	text-align: center;
-	padding: 50px 80px;
-}
-
-.section-light 
-{
-	background-color: #f4f4f4;
-	color: #666;
-}
-
-.section-dark {
-	background-color: #282e34;
-	color: #ddd;
-}
-
-.flex-center {
+ .flex-center {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
 	text-align: center;
 }
 
-.ptext 
-{
+.container {
+	margin: 0 auto;
+}
+
+ .parallax-img1,
+ .parallax-img2,
+ .parallax-img3 {
+ 	position:relative;
+    opacity: 0.70;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+ }
+
+.parallax-img1 {
+	background-image: url('../img/Virgin.jpg');
+	background-repeat: repeat;
+ 	min-height: 100%;
+}
+
+.parallax-img2 {
+ 	background-image: url('../img/image3.jpg');
+ 	min-height: 400px;
+ }
+
+.parallax-img3 {
+ 	background-image: url('../img/image5.jpg');
+ 	min-height: 400px;
+}
+
+.ptext {
 	color: #000;
 	font-size: 37px;
 	letter-spacing: 12px;
@@ -105,10 +65,78 @@ nav
 	}
 }
 
+@media (max-width: 820px) {
+	.mobile-hidden {
+		display: none;
+	}
 
-.contact
+	.col-mobile-size-100 { width: 100%; }
+	.col-mobile-size-90 { width: 90%; }
+	.col-mobile-size-80 { width: 80%; }
+	.col-mobile-size-70 { width: 70%; }
+	.col-mobile-size-60 { width: 60%; }
+	.col-mobile-size-50 { width: 50%; }
+	.col-mobile-size-40 { width: 40%; }
+	.col-mobile-size-30 { width: 30%; }
+}
+
+@media (min-width: 821px) {
+	.col-desktop-size-100 { width: 100%; }
+	.col-desktop-size-90 { width: 90%; }
+	.col-desktop-size-80 { width: 80%; }
+	.col-desktop-size-70 { width: 70%; }
+	.col-desktop-size-60 { width: 60%; }
+	.col-desktop-size-50 { width: 50%; }
+	.col-desktop-size-40 { width: 40%; }
+	.col-desktop-size-30 { width: 30%; }
+}
+
+
+.section 
 {
-	background-color: #666666;
+	text-align: center; 
+	padding: 50px 80px;
+}
+
+.section-light {
+	background-color: #f4f4f4;
+	color: #666;
+}
+
+.section-dark {
+	background-color: #282e34;
+	color: #ddd;
+}
+
+.section-row {
+	display: flex;
+	flex: 1;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	/* flex-wrap: nowrap; */
+	/* пуць */
+}
+
+.section-row-item {
+	/* max-width: 40%; */
+	box-sizing: border-box;
+	padding: 20px;
+}
+
+
+
+.unicorn {
+	/* font-size: 160px; */
+	font-size: 10em;
+}
+
+
+/*
+	CONTACT SECTION
+*/
+.contact {
+	background-color: #282e34;
 	color: #FFFFFF;
 	/*padding-top: 40px;
 	padding-left: 40px;
@@ -117,30 +145,24 @@ nav
 	padding: 40px 40px 60px 40px;
 }
 
-
-.btn-pretty
-{
+.btn-pretty {
 	background-color: pink;
 	transition-duration: .4s;
 }
 
-.btn-pretty:hover
-{
+.btn-pretty:hover {
 	/*color: pink;*/
 	/*background-color: #FFFFFF;*/
 }
 
-.send-button
-{
+.send-button {
 	/*width: 200px;
-	border-radius: 30px;*/
+	border-radius: 30px;*/ 
 	background-color: transparent;
 	padding: 0;
 }
 
-
-.follow-buttons
-{
+.follow-buttons {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -148,8 +170,7 @@ nav
 	height: 300px;
 }
 
-.animated-follow-me
-{
+.animated-follow-me {
 	display: block;
 }
 
@@ -163,11 +184,4 @@ nav
 		width: 100%;
 	}
 }
-
-.instagram-post 
-{
-	display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 40%;
-}
+/* мега-гіпер-жоскій-ПУЦЬ!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
