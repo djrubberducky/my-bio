@@ -292,3 +292,19 @@ header.addEventListener("click", function () {
     navigationBar.setAttribute("data-open", "1");
   }
 });
+
+
+
+$(document).ready(function(){
+  $(".owl-carousel").owlCarousel({
+    items: 1,
+    loop: true,
+    lazyLoad: true,
+    autowidth: true,
+    autoplay: true,
+    autoplaySpeed: 1000,
+    autoplayTimeout: 3000,
+    autoplayHoverPause: true,
+    margin: 5,
+  });
+});

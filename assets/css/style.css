@@ -6,7 +6,6 @@ body, html {
  	font-weight: 400;
  	line-height: 1.8em;
     color: #666;
-	 
 }
 
 /*
@@ -126,16 +125,16 @@ body, html {
 	margin: 0 auto;
 }
 
- .parallax-img1,
- .parallax-img2,
- .parallax-img3 {
- 	position:relative;
-    opacity: 0.70;
+.parallax-img1,
+.parallax-img2,
+.parallax-img3 {
+ 	position: relative;
+    opacity: 0.7;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
- }
+}
 
 .parallax-img1 {
 	background-image: url('../img/Virgin.jpg');
@@ -176,25 +175,25 @@ body, html {
 		display: none;
 	}
 
-	.col-mobile-size-100 { width: 100%; }
-	.col-mobile-size-90 { width: 90%; }
-	.col-mobile-size-80 { width: 80%; }
-	.col-mobile-size-70 { width: 70%; }
-	.col-mobile-size-60 { width: 60%; }
-	.col-mobile-size-50 { width: 50%; }
-	.col-mobile-size-40 { width: 40%; }
-	.col-mobile-size-30 { width: 30%; }
+	.col-mobile-size-100 { max-width: 100%; width: 100%; }
+	.col-mobile-size-90 { max-width: 90%; width: 90%; }
+	.col-mobile-size-80 { max-width: 80%; width: 80%; }
+	.col-mobile-size-70 { max-width: 70%; width: 70%; }
+	.col-mobile-size-60 { max-width: 60%; width: 60%; }
+	.col-mobile-size-50 { max-width: 50%; width: 50%; }
+	.col-mobile-size-40 { max-width: 40%; width: 40%; }
+	.col-mobile-size-30 { max-width: 30%; width: 30%; }
 }
 
 @media (min-width: 821px) {
-	.col-desktop-size-100 { width: 100%; }
-	.col-desktop-size-90 { width: 90%; }
-	.col-desktop-size-80 { width: 80%; }
-	.col-desktop-size-70 { width: 70%; }
-	.col-desktop-size-60 { width: 60%; }
-	.col-desktop-size-50 { width: 50%; }
-	.col-desktop-size-40 { width: 40%; }
-	.col-desktop-size-30 { width: 30%; }
+	.col-desktop-size-100 { max-width: 100%; width: 100%; }
+	.col-desktop-size-90 { max-width: 90%; width: 90%; }
+	.col-desktop-size-80 { max-width: 80%; width: 80%; }
+	.col-desktop-size-70 { max-width: 70%; width: 70%; }
+	.col-desktop-size-60 { max-width: 60%; width: 60%; }
+	.col-desktop-size-50 { max-width: 50%; width: 50%; }
+	.col-desktop-size-40 { max-width: 40%; width: 40%; }
+	.col-desktop-size-30 { max-width: 30%; width: 30%; }
 }
 
 
@@ -226,6 +225,8 @@ body, html {
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
+	max-width: 1920px;
+	margin: 0 auto;
 	/* flex-wrap: nowrap; */
 }
 
@@ -238,8 +239,9 @@ body, html {
 
 
 .unicorn {
-	/* font-size: 160px; */
 	font-size: 10em;
+	line-height: 1em;
+	transform: translateY(12px);
 }
 
 
@@ -296,4 +298,27 @@ body, html {
 	.contact {
 		padding: 10px;
 	}
+}
+
+.copyright {
+	position: relative;
+	background: #111;
+	margin: 0;
+	padding: 3px;
+	text-align: center;
+	color: #ffffff;
+	overflow: hidden;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+	background: rgba(255,192,203,1.0);
+}
+.owl-theme .owl-dots .owl-dot span {
+	background: rgba(255,192,203,0.3);
+}
+
+.owl-carousel .owl-stage {
+  display: flex;
+  align-items: center;
 }
