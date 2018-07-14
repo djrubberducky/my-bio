@@ -322,3 +322,6 @@ body, html {
   display: flex;
   align-items: center;
 }
+.owl-margin {
+	margin: 7px;
+}
